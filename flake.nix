@@ -53,9 +53,7 @@
               mkdir -p $out/bin
               mkdir -p $out/share/jarvis
 
-              cp speech.py $out/share/jarvis/
-              cp text_parser.py $out/share/jarvis/
-              cp executor.py $out/share/jarvis/
+              cp *.py $out/share/jarvis/
 
               makeWrapper ${pythonPackages}/bin/python $out/bin/jarvis \
                 --add-flags "$out/share/jarvis/speech.py" \
